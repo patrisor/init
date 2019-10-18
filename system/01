@@ -1,0 +1,3 @@
+# The file you can use to find the installed version of the Debian is:
+/etc/debian_version
+# To test, just run cat $(cat 01 | grep / | head -n 1) 

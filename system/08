@@ -1,0 +1,6 @@
+# The file which contains the RSA keys of systems authorized to
+# connect via SSH is called:
+/root/.ssh/authorized_keys
+# For this to work, we will need to first create a key with ssh-keygen,
+# set a password, then create the folder above to store the new key. 
+# This key represents the computer we will want to access using ssh.

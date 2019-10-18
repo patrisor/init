@@ -1,0 +1,3 @@
+#!/bin/bash
+# ssh user@ip ; for example:
+ssh user@$(ifconfig | grep "inet " | head -n 1 | awk '{print $2}')

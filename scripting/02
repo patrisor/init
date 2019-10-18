@@ -1,0 +1,22 @@
+#!/bin/bash
+if [ $# -ne 1 ]
+then
+    echo "usage: ./02 [active_user]"
+    exit 1
+fi
+exists=0
+active_users=($(awk -F':' '{print $1}' /etc/passwd))
+for (( i=0; i<${#active_users[@]}; i++ ));
+do
+    if [ $1 = ${active_users[i]} ]
+    then
+    	exists=$((exists + 1))
+    fi
+done
+if [ $exists == 0 ]
+then
+    echo "error: the user "$1" does not exist"
+    exit 1
+else
+    sudo deluser $1
+fi

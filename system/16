@@ -1,0 +1,8 @@
+# The service we would use to schedule specific 
+# jobs under a schedule would be the crontab tool.
+# For example, to schedule a job for root, we would
+# need to run the command "sudo crontab -u root -e"
+# to enter a crontab configuration file. Next, we
+# pick an editor to imbed a schedule and command in
+# this format:
+# [minute] [hour] [date] [month] [weekday] [command]

@@ -1,0 +1,11 @@
+# 1. First, log in to your server
+#	- ssh root@server_ip_address
+# 2. Create a new user account
+#	- useradd username # once prompted, provide password
+# 3. Add the user to the sudo group
+#	- usermod -aG sudo username
+# 4. Test
+#	- su - username # Switch to newly created sudo user
+#	- sudo whoami
+# If the output of the whoami command returns root, then you have 
+# successfully connected yourself as a new user

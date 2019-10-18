@@ -1,0 +1,4 @@
+# The file(s) you have to modify to make the system name change
+# permanent are: 
+/etc/hostname
+/etc/hosts
