@@ -1,0 +1,3 @@
+# The file that contains the local DNS entries is:
+/etc/hosts
+# TO TEST: run cat $(cat 14 | grep / | head -n 1)

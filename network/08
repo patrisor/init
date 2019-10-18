@@ -1,0 +1,3 @@
+# The provider of slash16.org is Online SAS, a French cloud computing and web hosting company,
+# founded by Xavier Neil in 1999. To test, simply run: $(cat 08 | grep whois | tail -n1) 
+whois slash16.org | grep Registrar: | head -n 1 | cut -c 12-

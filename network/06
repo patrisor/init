@@ -1,0 +1,4 @@
+# The complete file path of the file that contains the IP address of the DNS server I am using 
+# is:
+/etc/resolv.conf
+# To test, simply run cat $(cat 06 | grep / | head -n1)

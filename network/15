@@ -1,0 +1,4 @@
+# To reroute intra.42.fr to the ip 46.19.122.85, we need to run the command:
+sudo echo "46.19.122.85		intra.42.fr" >> /etc/hosts
+# The point of doing this is to block your requests to see the 42 page, and instead
+# access the linux redhat page. TO TEST, just run $(cat 15 | grep sudo | head -n 1) 
